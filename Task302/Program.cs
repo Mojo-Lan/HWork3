@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+// A (0,0); B (1,1), -> ~1.4
+// A (2,4); B (0,7) -> ~3.6
+
+
+int xa = 2, ya = 4,
+    xb = 0, yb = 7;
+int x = xb - xa, y = yb - ya;               //Нахождение расстояния между точек формула АВ = sqrt((xb-xa)^2 + (yb-ya)^2)
+
+int resultat = 0;
+resultat = ((x * x) + (y * y));             //
+double i = Math.Sqrt(resultat);
+
+Console.WriteLine(i);
+
