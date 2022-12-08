@@ -8,8 +8,8 @@ int xa = 2, ya = 4,
 int x = xb - xa, y = yb - ya;               //Нахождение расстояния между точек формула АВ = sqrt((xb-xa)^2 + (yb-ya)^2)
 
 int resultat = 0;
-resultat = ((x * x) + (y * y));             //
-double i = Math.Sqrt(resultat);
+resultat = ((x * x) + (y * y));             //Производим вычисление x^2 + y^2
+double i = Math.Sqrt(resultat);             //Вычисляем корень числа
 
-Console.WriteLine(i);
+Console.WriteLine(i);                       //Выводим результат
 

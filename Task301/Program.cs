@@ -3,24 +3,20 @@
 // 12821 -> да
 // 23432 -> да
 ///нужно сравнивать первую и последнюю цифру и т.д.
-/// 
-// Console.WriteLine("Введите пятизначное число");
-// int number = Convert.ToInt32(Console.ReadLine());
 
-
-Console.Write("Введите число: ");
+Console.Write("Введите число: ");                                   //Вводим число
 string? number = Console.ReadLine();
 
-void CheckingNumber(string number)
+void CheckingNumber(string number)                                  //Метод проверки числа
 {
-  if (number[0]==number[4] || number[1]==number[3])
+  if (number[0]==number[4] || number[1]==number[3])                 //Сравниваем первую и пятую, вторую и четвертую цифры 
   {
-    Console.WriteLine($"Ваше число: {number} - палиндром.");
+    Console.WriteLine($"Ваше число: {number} - палиндром.");         //Если цифры равны
   }
-  else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
+  else Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");    //Если не равны
 }
 
-if (number!.Length == 5)
+if (number!.Length == 5)                                            //Если ввели не пятизначное число
 {
   CheckingNumber(number);
 }

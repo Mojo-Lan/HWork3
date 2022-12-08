@@ -4,12 +4,12 @@
 
 
 
-Console.WriteLine("Введите число");
+Console.WriteLine("Введите число");                            //Вводим любое число
 int number = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 0; i <= number; i++)
-{
-    Console.WriteLine($"{i} * {i} * {i} = {i * i * i}");
+for (int i = 0; i <= number; i++)                              //Цикл: первому числу присваиваем 0, смотрим что бы не был больше нашего введенного числа
+{                                                              //первое число увеличиваем на 1     
+    Console.WriteLine($"{i} * {i} * {i} = {i * i * i}");       //Выводим выражение вычисления куба 
     
 }
-Console.WriteLine();
+Console.WriteLine();                                            //Пустая строка для разделения
